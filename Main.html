@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<style>
+body{overflow:scroll;background:#b0ffff;}
+
+header{position:absolute;width:100%;height:0%;background:#00ffff;font-size:70px;text-align:center;z-index:1;opacity:0.5;left:0;top:0;color:#b0ffff;line-height:70px;}
+header:hover{animation:headmove 2s;animation-fill-mode:forwards;}
+
+@keyframes headmove{
+from{height:0;color:#b0ffff;}
+to{height:12%;color:#ffffff;}
+}
+
+#mainpic{background:url('Earth.jpg');position:absolute;left:10%;height:80%;top:15%;width:80%;background-repeat:no-repeat;background-size:100% 100%;}
+#mainpic{animation:switch 15s infinite;}
+
+@keyframes switch{
+0%{background:url('Earth.jpg');background-repeat:no-repeat;background-size:100% 100%;}
+17%{background:url('Forest.jpg');background-repeat:no-repeat;background-size:100% 100%;}
+34%{background:url('Bike.jpg');background-repeat:no-repeat;background-size:100% 100%;}
+51%{background:url('Mito.jpg');background-repeat:no-repeat;background-size:100% 100%;}
+68%{background:url('Nucleus.jpg');background-repeat:no-repeat;background-size:100% 100%;}
+85%{background:url('Water.jpg');background-repeat:no-repeat;background-size:100% 100%;}
+100%{background:url('Earth.jpg');background-repeat:no-repeat;background-size:100% 100%;}
+}
+
+
+.macros{position:absolute;top:105%;height:30%;width:20%;left:4%;background:red;margin-bottom:5%;text-align:center;}
+.macros:hover{animation: fade 1s;animation-fill-mode:forwards;}
+
+.macros h1{line-height:120px;visibility:hidden;color:black;}
+
+@keyframes fade{
+from{opacity:1;}
+to{opacity:0.5;}
+}
+
+#carbs{background:url('Carbohydrates1.jpg');background-repeat:no-repeat;background-size:100% 100%;}
+
+#lipids{left:28%;background:url('Lipids.jpg');background-repeat:no-repeat;background-size:100% 100%;}
+
+#proteins{left:52%;background:url('Protein.jpg');background-repeat:no-repeat;background-size:100% 100%;}
+
+
+#nucleic{left:76%;background:url('DNA.jpg');background-repeat:no-repeat;background-size:100% 100%;}
+
+
+
+
+</style>
+<title>Biology</title>
+</head>
+<body>
+
+<Header>Fundamentals of Biology</Header>
+
+
+<div id = "mainpic">
+
+</div>
+
+<a href = "carbs.html">
+<div onmouseover = "carbappear()" onmouseout = "carbdis()" class = "macros" id = "carbs">
+<h1 id="carbh">Carbohydrates</h1>
+</div>
+</a>
+
+<a href = "lipids.html">
+<div onmouseover = "lipappear()" onmouseout = "lipdis()" class = "macros" id = "lipids">
+<h1 id = "liph">Lipids</h1>
+</div>
+</a>
+
+<a href = "proteins.html">
+<div onmouseover = "proappear()" onmouseout = "prodis()" class = "macros" id = "proteins">
+<h1 id = "proh">Proteins</h1>
+</div>
+</a>
+
+<a href = "nucleicacids.html">
+<div onmouseover = "nucappear()" onmouseout = "nucdis()" class = "macros" id = "nucleic">
+<h1 id = "nuch">Nucleic Acids</h1>
+</div>
+</a>
+
+<script>
+function carbappear(){
+carbh.style.visibility = "visible";
+}
+function carbdis(){
+carbh.style.visibility = "hidden";
+}
+
+function lipappear(){
+liph.style.visibility = "visible";
+}
+function lipdis(){
+liph.style.visibility = "hidden";
+}
+
+function proappear(){
+proh.style.visibility = "visible";
+}
+function prodis(){
+proh.style.visibility = "hidden";
+}
+
+function nucappear(){
+nuch.style.visibility = "visible";
+}
+function nucdis(){
+nuch.style.visibility = "hidden";
+}
+
+</script>
+
+
+</body>
+</html>
+
+
+
+
+
+

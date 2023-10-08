@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Lipids</title>
+<style>
+body{background:#c67727;}
+
+header{position:absolute;width:100%;height:13%;background:#f9e076;font-size:70px;text-align:center;z-index:1;opacity:1;left:0;top:0;color:#006400;line-height:70px;}
+div{position:absolute;}
+#sub{top:13%;width:100%;left:0;background:#fae29c;height:6.5%;text-align:center;}
+#sub a{text-decoration:none;margin-right:10%;line-height:50px;font-size:25px;color:#33ff33;}
+
+h1{color:#e4cd05;}
+
+#glycerol{height:35%;width:20%;top:32.5%;background:yellow;text-align:center;font-size:70px;line-height:75px;color:green;z-index:1;left:5%;}
+#chain{background:url("Lipidchain.png");height:20%;width:70%;background-repeat:no-repeat;background-size:100% 100%;top:40%;left:25%;animation:slide 3s;}
+
+@keyframes slide{
+from{width:0;}
+to{width:70%;}
+}
+
+#struct{position:absolute;left:38.5%;top:60%;transform:rotate(90deg);animation:smove 3s;}
+@keyframes smove{
+from{left:0;opacity:0;}
+to{left:38.5%;opacity:1;}
+}
+
+#mono{position:absolute;transform:rotate(-90deg);top:27%;left:48%;animation:mmove 3s;}
+@keyframes mmove{
+from{left:0;opacity:0;}
+to{left:48%;opacity:1;}
+}
+
+#poly{position:absolute;transform:rotate(90deg);top:60%;left:58.5%;animation:pmove 3s;}
+@keyframes pmove{
+from{left:0;opacity:0;}
+to{left:58.5%;opacity:1;}
+}
+
+#funct{position:absolute;transform:rotate(-90deg);top:27%;left:67.5%;animation:fmove 3s;}
+@keyframes fmove{
+from{left:0;opacity:0;}
+to{left:67.5%;opacity:1;}
+}
+
+#effects{position:absolute;transform:rotate(90deg);top:58%;left:79.5%;animation:emove 3s;}
+@keyframes emove{
+from{left:0;opacity:0;}
+to{left:79.5%;opacity:1;}
+}
+
+.info{position:absolute;top:35%;left:26%;color:#f9e076;visibility:hidden;}
+#strucpara{font-size:25px;}
+#monopara{font-size:20px;top:33%;}
+#polypara{font-size:25px;}
+#functpara{font-size:20px;}
+#effectspara{font-size:20px;top:33%;}
+
+</style>
+</head>
+<body>
+
+<header>Macromolecules</header>
+<div id = "sub">
+<a href = "Biology.html">Home</a>
+<a href = "Carbs.html">Carbohydrates</a>
+<a href = "Proteins.html">Proteins</a>
+<a href = "NucleicAcids.html">Nucleic Acids</a>
+</div>
+
+<div id = "glycerol">
+<p>Lipids</p>
+</div>
+
+<div id = "chain">
+
+</div>
+
+<h1 id = "struct" onclick = "happen(1)">Structure</h1>
+<p class = "info" id = "strucpara">Lipids are made up of the same elements as Carbohydrates: Carbon, Hydrogen, and Oxygen. The differences arise in how they are arranged. While the shape and arrangement of the elements in carbs allow the molecule to be polar, and therefore hydrophilic, the shape of lipids, a long chain of fatty acids, causes it to be hydrophobic, repelling water. </p>
+
+
+<h1 id = "mono" onclick = "happen(2)">Monomer</h1>
+<p class = "info"  id = "monopara">The monomer of a lipid is a fatty acid. These are usually carboxylic acids that form long chains in order to create lipids. They can be saturated, unsaturated, or trans fats. Unsaturated fatty acids have a carbon double bond in their structure. This bond allows them to bend, meaning they are flexible and tend to be liquid at room temperature. A monounsaturated fat has one carbon double bond while a polyunsaturated fat has two or more. An example of an unsaturated fat would be vegetable oil. Saturated fats do not have a carbon double bond; they are rigid and tend to be solid at room temperature. An example of this would be butter. Trans fats do have carbon double bonds, but the difference arises due to the arrangement of hydrogens along the chain; in a trans fat a hydrogen molecule is missing like in an unsaturated fat, but it is missing in a way that allows the chain to be more symmetric. They are semi-solid at room temperatures, and an example would be the fat found in fast food. </p>
+
+
+<h1 id = "poly" onclick = "happen(3)">Polymers</h1>
+<p class = "info"  id = "polypara">The polymer of a lipid is a glyceride. One glyceride is created when a glycerol attaches to a fatty acid chain via a dehydration reaction, where water is lost from the molecules in order to combine them. These make up parts of most fats, but are part of a larger structure called a triglyceride, three glycerides put together in order to make a lipid. </p>
+
+
+<h1 id = "funct" onclick = "happen(4)">Functions</h1>
+<p class = "info" id = "functpara">The main function of lipids is to store energy for long term use in the body. When food is eaten in excess, the body stores the extra energy as lipids in fat cells in case it needs to use them later on. They can be hormones that act as the ligand for a cell-signaling pathway. Due to their non-polar nature, unlike protein hormones, when they act as ligands, lipids have to bind to a receiver on the outside of the cell, not an internal receiver. Another important function of lipids is to make up the non-polar middle region of the phospholipid bilayer. The membrane is composed of two layers  of lipid tails connected to phosphate heads put together so that the lipid heads are continuous and the phosphate heads are completely separate. This configuration allows small, non-polar molecules to pass through the membrane easily.</p>
+
+
+<h1 id = "effects" onclick = "happen(5)">Effects</h1>
+<p  class = "info" id = "effectspara">Having an excess of stored fat in our bodies is dangerous to our health. There are two different types of stored fat, subcutaneous, and visceral. Subcutaneous fat is fat stored just below the skin, and visceral fat is that stored around the organs; the amount of each type produced varies from person to person based on their genetics. When a high amount of visceral fat builds up in the body, it can impair the functions of major organs like the heart, leading to severe conditions and death. Lipids make it so that, in the event that there is not enough food available to eat, the body still has a source of energy to use. When the body detects that it is storing too many of these lipids, it raises the metabolism slightly in an attempt to burn off some of the extra fat that is being stored. Since lipids are hydrophobic, eating a high percentage of them compared to carbohydrates or protein leads to less water retention in the body, and tends to make people look smaller or less bloated. </p>
+
+
+<script>
+function happen(x){
+
+chain.style.visibility = "hidden";
+struct.style.transform = "rotate(0deg)";
+mono.style.transform = "rotate(0deg)";
+poly.style.transform = "rotate(0deg)";
+funct.style.transform = "rotate(0deg)";
+effects.style.transform = "rotate(0deg)";
+
+strucpara.style.visibility = "hidden";
+monopara.style.visibility = "hidden";
+polypara.style.visibility = "hidden";
+functpara.style.visibility = "hidden";
+effectspara.style.visibility = "hidden";
+
+switch(x){
+
+case 1: strucpara.style.visibility = "visible";
+break;
+
+case 2: monopara.style.visibility = "visible";
+break;
+case 3: polypara.style.visibility = "visible";
+break;
+case 4: functpara.style.visibility = "visible";
+break;
+case 5: effectspara.style.visibility = "visible";
+break;
+}
+
+}
+
+</script>
+
+</body>
+</html>
+
+
+
+
+

@@ -1,0 +1,162 @@
+ <html>
+<head>
+<title>Proteins</title>
+<style>
+body{background:#e3c565;overflow:hidden;}
+
+header{position:absolute;width:100%;height:13%;background:#b5651d;font-size:70px;text-align:center;z-index:1;opacity:1;left:0;top:0;color:#800000;line-height:70px;}
+div{position:absolute;}
+#sub{top:13%;width:100%;left:0;background:#cc9966;height:6.5%;text-align:center;}
+#sub a{text-decoration:none;color:#ff0000;margin-right:10%;line-height:50px;font-size:25px;}
+
+h1{color:#ff0000;position:absolute;top:50%;}
+canvas{position:absolute;top:20%;}
+
+#struc{left:1%;animation:smove 3s;animation-fill-mode:forwards;}
+@keyframes smove{
+from{left:1%;top:50%;}
+to{left:35%;top:22%;}
+}
+
+#mono{left:12%;animation:mmove 3s;animation-fill-mode:forwards;}
+@keyframes mmove{
+from{left:12%;top:50%;}
+to{left:1%;top:30%;}
+}
+
+#poly{left:23%;animation:pmove 3s;animation-fill-mode:forwards;}
+@keyframes pmove{
+from{left:23%;}
+to{left:20%;}
+}
+
+#funct{left:34%;animation:fmove 5s;animation-fill-mode:forwards;}
+@keyframes fmove{
+from{left:34%;top:50%;}
+to{left:35%;top:70%;}
+}
+
+#effects{left:45%;animation:emove 5s;animation-fill-mode:forwards;}
+@keyframes emove{
+from{left:45%;top:50%;}
+to{left:5%;top:90%;}
+}
+
+#rightpic{position:absolute;left:53%;height:75%;width:45%;background:url('Bloodproteins.jpg');top:22%;background-repeat:no-repeat;background-size:100% 100%;}
+
+p{visibility:hidden;position:absolute;top:0%;color:#800000;font-size:25px;height:90%;overflow:auto;}
+
+canvas{z-index:-2;}
+</style>
+</head>
+<body>
+
+<header>Macromolecules</header>
+<div id = "sub">
+<a href = "Biology.html">Home</a>
+<a href = "Carbs.html">Carbohydrates</a>
+<a href = "Lipids.html">Lipids</a>
+<a href = "NucleicAcids.html">Nucleic Acids</a>
+</div>
+
+<h1 id = "struc" onclick = "appear(1)">Structure</h1>
+<h1 id = "mono" onclick = "appear(2)">Monomer</h1>
+<h1 id = "poly" onclick = "appear(3)">Polymer</h1>
+<h1 id = "funct" onclick = "appear(4)">Function</h1>
+<h1 id = "effects" onclick = "appear(5)">Effects</h1>
+
+
+
+<canvas id = "mycanvas" width = "550" height = "550"></canvas>
+
+<div id = "rightpic">
+
+<p id = "strucpara" onclick = "appear(1)">
+Proteins consist of Carbon, Hydrogen, Oxygen, Nitrogen, and Sulfur. They have primary, secondary, tertiary, and quaternary forms. In the primary form, they are just long chains of amino acids(click on "monomer" to learn more). Those amino acids then start to fold and take a new shape held together by hydrogen bonds in their secondary form. Major examples of this include alpha helices and beta structures. Their tertiary form involves folding even more to get the 3d shape needed by proteins. They start to become functional at this stage of their development. In the quaternary stage, all folding is complete, and all subunits of the protein are assembled. This protein is able to carry out any tasks that it needs to accomplish, and the organism is able to use it for certain purposes. 
+</p>
+
+<p id = "monopara" >
+The monomer of a protein is an amino acid. Amino acids are coded for by codons in mRNA, groups of three nitrogenous bases that alert the ribosome to synthesize a certain amino acid. These acids have R groups, which can be polar or non-polar; polar meaning they are hydrophilic(attracting or compatible with water) and non-polar meaning they are hydrophobic(repelling or unsuitable with water). One amino acid always has the same r group; it is not something that cells mix and match to give them special properties and greater diversity. Whether an amino acid is polar or non-polar has an effect on where in the cell a protein will be able to function. A protein made of largely polar amino acids will likely function in the cytosol, as that is the polar region of the cell, and a protein with amino acids that are largely non-polar will work in the mid-section of the plasma membrane, which consists of hydrophobic lipid tails of the phospholipid bilayer. 
+</p>
+
+<p id = "polypara">
+Amino acids join together to form what are known as peptides and polypeptides. These peptides are put together using dehydration reactions, reactions in which the molecules that form water are taken from two substances in order to combine them. In this case, the carboxyl group of one peptide joins with the amine group of another peptide, forming a polypeptide which will later become a protein as it folds and assumes the correct shape for its corresponding activities. 
+</p>
+
+<p id = "functpara">
+Proteins are known as the workers of the cell because they do many miscellaneous, but crucial, jobs in this environment. One commonly talked-about type of protein is an enzyme, whose function is to lower the activation energy of a reaction, making it take less energy to get underway, meaning it becomes easier for the cell to carry it out. In order for enzymes to work, they need substrates to which they will bind. Their shapes are complementary to each other, meaning one enzyme fits with a specific substrate, and no reaction will occur if the lock-and-key model is not satisfied. Other proteins work in the plasma membrane and the cytosol(click on "monomer") to learn more about that. In the membrane, they can be used in facilitated diffusion, which is the movement of a substance through the membrane from a high to low concentration, but one that needs to be aided because the substance is too large or polar to pass through the membrane itself. Some proteins work to carry substances across the membrane in active transport. In the cell itself, proteins are used for a wide variety of purposes, ranging from controlling blood glucose levels(go to the "Carbohydrates" page to learn more about that), helping to synthesize ATP, and helping autotrophs like plants go through photosynthesis. 
+</p>
+
+<p id = "effectspara">
+There are 21 amino acids that are used to create proteins, but unlike some organisms, humans cannot produce all of them. There are a select few that our bodies are able to produce, but we need to find ways to consume the rest, whether we get them from eating meat or plants with a lot of protein, usually the darker, leafy vegetables. We can also get them from what we drink, including liquids like milk. When they are consumed, proteins are used by our body to carry out certain tasks in our cells, but given the proper stimulus, can also be used for muscular growth, also known as muscular hypertrophy. When protein is eaten, it also is known to have a satiating effect on the body, meaning it reduces hunger more than carbohydrates or lipids. It is also known to have a more significant thermic effect than the other macromolecules; it takes more energy(calories) to digest protein than it takes to digest carbs and fats. This means consuming a higher percentage of protein will likely help human bodies to burn off more energy, albeit a slight and usually inconsequential amount.
+</p>
+
+
+
+</div>
+
+
+<script>
+
+function appear(x){
+rightpic.style.background = "#e3c565"
+strucpara.style.visibility = "hidden";
+monopara.style.visibility = "hidden";
+polypara.style.visibility = "hidden";
+functpara.style.visibility = "hidden";
+effectspara.style.visibility = "hidden";
+
+switch(x){
+case 1: strucpara.style.visibility = "visible";
+break;
+
+case 2: monopara.style.visibility = "visible";
+break;
+
+case 3: polypara.style.visibility = "visible";
+break;
+
+
+case 4: functpara.style.visibility = "visible";
+break;
+
+case 5: effectspara.style.visibility = "visible";
+break;
+}
+}
+
+
+
+
+
+
+
+let c = document.getElementById("mycanvas");
+let ctx = c.getContext("2d");
+function line(a,b,x,y){
+ctx.strokeStyle = "#8b4513";
+ctx.lineWidth = 3;
+ctx.moveTo(a,b);
+ctx.lineTo(x,y);
+ctx.stroke();
+}
+
+function zig(){
+line(132,115,460,50);
+line(130,115,270,250);
+}
+function zag(){
+line(270,250,540,390);
+line(540,390,130,530);
+}
+
+setTimeout(zig,3000);
+setTimeout(zag,5000);
+
+
+
+</script>
+</body>
+</html>
+
+

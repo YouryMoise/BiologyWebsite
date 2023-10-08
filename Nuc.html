@@ -1,0 +1,113 @@
+<html>
+<head>
+<title>Nucleic Acids</title>
+<style>
+body{background:#000000;}
+
+header{position:absolute;width:100%;height:13%;background:#1167b1;font-size:70px;text-align:center;z-index:1;opacity:1;left:0;top:0;color:#aa2400;line-height:70px;}
+div{position:absolute;}
+#sub{top:13%;width:100%;left:0;background:#187bcd;height:6.5%;text-align:center;}
+#sub a{text-decoration:none;color:#dd0000;margin-right:10%;line-height:50px;font-size:25px;z-index:2;}
+a{text-decoration:none;}
+h1{color:red;position:absolute;}
+
+#struc{top:30%;left:14%;}
+#mono{top:30%;left:34%}
+#poly{top:56%;left:25%;}
+#funct{top:82%;left:14%;}
+#effects{top:82%;left:34%;}
+
+#dnahelix{position:absolute;top:20%;height:78%;width:40.2%;background:url('helix.png');background-repeat:no-repeat;background size: 100% 100%;z-index:-2;left:9.8%;}
+
+#bluedna{position:absolute;top:20%;height:78%;width:40.2%;background:url('bluedna.jpg');background-repeat:no-repeat;background-size:100% 100%;right:9.8%;}
+
+p{color:blue;position:absolute;overflow:auto;right:9.8%;width:40.2%;height:78%;top:20%;font-size:25px;visibility:hidden;}
+
+</style>
+</head>
+<body>
+
+<header>Macromolecules</header>
+<div id = "sub">
+<a href = "Biology.html">Home</a>
+<a href = "Carbs.html">Carbohydrates</a>
+<a href = "Lipids.html">Lipids</a>
+<a href = "Proteins.html">Proteins</a>
+</div>
+
+<h1 id = "struc" onclick = "appear(1)">Structure</h1>
+<p id = "strucpara">
+Nucleic acids and proteins have the most elements out of any of the macromolecules; we remember these elements using the acronym, CHONP and CHONS for nucleic acids and proteins, respectively. They are made of Carbon, Hydrogen, Oxygen, Nitrogen, and Phosphate. Depending on the type of acid, they can be arranged in the form of a double helix or as a straight line of monomers put together. They are made of a hard sugar backbone that connects to and supports the monomers in the molecule. 
+</p>
+
+
+<h1 id = "mono" onclick = "appear(2)">Monomer</h1>
+<p id = "monopara">
+The monomers of nucleic acids are nucleotides. These are made of a nitrogenous base, a phosphate head, and a sugar backbone. In DNA, which stands for Deoxyribonucleic Acid, the sugar found is Deoxyribose. The four nitrogenous bases found in DNA are adenine, thymine, guanine, and cytosine. The sugar found in RNA, Ribonucleic Acid, is ribose. It has the same bases as DNA, excpet that it uses uracil instead of thymine. 
+</p>
+//Add a picture of a nucleotide
+
+<h1 id = "poly" onclick = "appear(3)">Polymer</h1>
+<p id = "polypara">
+The polymers of nucleic acis are DNA, Deoxyribonucleic Acid, and RNA, Ribonucleic Acid. DNA's nucleotides are paired with each other using a base pairing system that connects Guanine with Cytosine and Adenine to Thymine(cars to garages and apples to trees). RNA has connects Uracil to Adenine instead of Thymine. DNA has the shape of a double helix, meaning it actually does have the twisting and winding shape often displayed in diagrams. In prokaryotes, however, it is a single, circular molecule. RNA has a much more simple shape; it has its nucleotides arranged in a linear pattern, a straight line.  
+</p>
+
+
+<h1 id = "funct" onclick = "appear(4)">Function</h1>
+<p id = "functpara">
+DNA's function is to store the gentic information necessary to create an organism. RNA function is to use that information to create the proteins specific to each human body. This is done by taking one strand of DNA and making a complementary RNA strand, so uracil would be added to RNA when adenine is found in DNA, cytosine would be added when guanine is found, and so on. The strand of RNA, known as messenger RNA or mRNA, is used to make a protein when its codons(groups of three bases) are read, prompting the addition of a corresponding amino acid in a an amino acid chain. These will later become <a href = "Proteins.html">proteins</a>, and the way they are synthesized determines the genetics of the organism. The proteins each person has gives them their unique characteristics, and any missing or defective proteins may lead to mutations that can benefit or hurt them in terms of survival.
+</p>
+
+
+<h1 id = "effects" onclick = "appear(5)">Effects</h1>
+<p id = "effectspara">
+Nucleic acids are not meant to be consumed, unlike the other macromolecules. They are simply used as a method of storing the genetic information every organism possesses. When a mistake had been made in the replication of DNA or the transcription of RNA, mutations can occur in the organism. These mutations increase the biodiversity of a population, but may be selected against if the environmental conditions do not support it. 
+</p>
+
+
+<div id = "dnahelix"></div>
+<div id = "bluedna"></div>
+
+<script>
+
+function appear(x){
+bluedna.style.visibility = "hidden";
+strucpara.style.visibility = "hidden";
+monopara.style.visibility = "hidden";
+polypara.style.visibility = "hidden";
+functpara.style.visibility = "hidden";
+effectspara.style.visibility = "hidden";
+
+switch(x){
+case 1: strucpara.style.visibility = "visible";
+break;
+
+case 2: monopara.style.visibility = "visible";
+break;
+
+case 3: polypara.style.visibility = "visible";
+break;
+
+
+case 4: functpara.style.visibility = "visible";
+break;
+
+case 5: effectspara.style.visibility = "visible";
+break;
+}
+}
+
+
+</script>
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+

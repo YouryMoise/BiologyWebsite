@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+a{text-decoration:none;color:#fc46aa;}
+
+body{overflow:hidden;}
+#picture{position:absolute;width:70%;height:70%;left:15%;top:25%;background:url("glucose.png");background-size:100% 100%; background-repeat:no-repeat;}
+#brown{position:absolute;left:35%;top:47%;color:#b5651d;font-size:70px;animation: fadein 3s;animation-fill-style:forwards;}
+.info{position:absolute;top:40%;left:22%;width:60%;color:#b5651d;font-size:25px;visibility:hidden;}
+
+header{position:absolute;width:100%;height:13%;background:#cc9966;font-size:70px;text-align:center;z-index:1;opacity:0.5;left:0;top:0;color:white;line-height:70px;}
+div{position:absolute;}
+#sub{top:13%;width:100%;left:0;background:#f9e5bc;height:6.5%;text-align:center;}
+#sub a{margin-right:10%;line-height:50px;font-size:25px;}
+
+@keyframes fadein{
+from{opacity:0;}
+to{opacity:1;}
+}
+
+h1{position:absolute;color:#fc94af;animation-fill-style:forwards;}
+#struc{left:30%;top:17%;animation:strucmove 3s;}
+@keyframes strucmove{
+from{opacity:0;left:0;}
+to{opacity:1;left:30%;}
+}
+
+
+#funct{left:13%;top:43%;animation:functmove 3s;}
+@keyframes functmove{
+from{opacity:0;left:0;}
+to{opacity:1;left:13%;}
+}
+
+#mono{left:13%;top:75%;animation:monomove 3s;}
+@keyframes monomove{
+from{opacity:0;left:0;}
+to{opacity:1;left:13%;}
+}
+
+#polymer{left:45%;top:90%;animation:polymove 3s;}
+@keyframes polymove{
+from{opacity:0;left:0;}
+to{opacity:1;left:45%;}
+}
+
+#effects{left:82%;top:77%;animation:effectsmove 3s;}
+@keyframes effectsmove{
+from{opacity:0;left:100%;}
+to{opacity:1;left:82%;}
+}
+
+#strucpara{top:39%;font-size:22px;}
+#functpara{font-size:19px;top:38%;}
+#monopara{}
+#polypara{}
+#effectspara{font-size:19px;top:38%;}
+
+
+</style>
+<title>Carbohydrates</title>
+</head>
+
+<body>
+<div id = "picture"></div>
+<p id = "brown">Carbohydrates</p>
+
+<header>Macromolecules</header>
+<div id = "sub">
+<a href = "Biology.html">Home</a>
+<a href = "Lipids.html">Lipids</a>
+<a href = "Proteins.html">Proteins</a>
+<a href = "NucleicAcids.html">Nucleic Acids</a>
+</div>
+
+<h1 class = "mainh" id = "struc" onclick = "explain(1)">Structure</h1>
+<p class = "info" id = "strucpara">Carbohydrates are composed of carbon, hydrogen, and oxygen. They usually have the same amounts of carbon and oxygen, and twice as much hydrogen as carbon or oxygen. They are usually arranged in a pentagonal or hexagonal shape, with carbon as the backbone. An easy way to remember their elements is the acronym CHO. They can be connected by alpha and beta bonds, which determine how well humans can digest them. Alpha bonds are usually illustrated as triangles facing down, and beta bonds are depicted as triangles facing up; humans cannot digest beta bonds, which is what monomers in fiber are connected by. Although they have the same elements as lipids, the arrangement of those molecules leads to carbs being polar, easily dissolving in water.</p>
+
+<h1 class = "mainh" id = "funct" onclick = "explain(4)">Functions</h1>
+<p class = "info" id = "functpara">The main purpose of carbohydrates is to provide energy for the body. They are the quickest and easiest source of energy, and can even be broken down anaerobically, meaning without the presence of oxygen. We use carbs when we are doing high intensity exercises or just to have energy throughout the day. They are also attached to the plasma membrane to provide ATP for its activities. If the cell needs to carry out active transport, the carbohydrates on the membrane can provide energy in order to force a substance against its concentration gradient. Glucose can be stored for future use in the form of glycogen. One use of glycogen is when the body feels as if it is in an emergency situation; if we are running from a bear for example, our body will allow us to tap into glycogen stores for a last minute energy boost that may save our lives. Glycogen is also stored in the muscles of the body to give them energy when we are using them, especially under great stress or intensity. The carbohydrate cellulose is also used to create the cell wall of plants, giving them a rigid outer layer for structure and protection.</p>
+
+<h1 class = "mainh" id = "mono" onclick = "explain(2)">Monomer</h1>
+<p class = "info" id = "monopara">
+The monomers of carbohydrates are known as monosaccharides, or simple sugars. These include sugars like glucose and fructose; glucose is what is typically found in most plants, while fructose is what we find in fruits. These are what nutrition labels are talking about when they mention sugars and added sugars; they are digested much more quickly than anything else that can be used for energy, and are not as satiating as other macromolecules. 
+</p>
+
+<h1 class = "mainh" id = "polymer" onclick = "explain(3)">Polymers</h1>
+<p class = "info" id = "polypara">The polymers of carbohydrates are known as disaccharides and polysaccharides, disaccharides being composed of two simple sugars and polysaccharides being composed of two or more. Examples of disaccharides are lactose(the carb found in dairy products), which is made of glucose and galactose, and sucrose(table sugar), which is made of glucose and fructose. Starch is also a type of polysaccharide, and is found as energy storage in most plants.</p>
+
+<h1 class = "mainh" id = "effects" onclick = "explain(5)">Effects</h1>
+<p class = "info" id = "effectspara">
+When carbohydrates are consumed, they increase insulin levels in our blood. Insulin is a hormone that is meant to bring glucose to different areas of the body like the muscles and the liver; it also stores fat when there is more than enough glucose in the bloodstream. The presence of this hormone inhibits other hormones like leptin, which tells the brain that the body is full, causing it to believe more energy is still needed. That and the fact that the ensuing insulin crash leaves a feeling of hunger, eating extremely sugary food tends to leave people feeling hungry even if their bodies do not require any more energy, leading to overeating and obesity in some cases. Carbs store water instead of repelling it because they are polar, and therefore hydrophilic. Eating more carbohydrates results in a greater amount of water weight because of this polar tendency. For each gram of glycogen stored in the muscle, three grams of water are also stored. This is why people tend to look smaller when trying out low-carb diets; they are losing weight, but mostly in stored glycogen and water.
+</p>
+
+<script>
+
+
+let x = document.getElementsByClassName("mainh");
+function explain(x){
+
+brown.style.visibility = "hidden";
+picture.style.left = "17%";
+picture.style.height = "75%";
+picture.style.background = "url(Hexagon.png)";
+picture.style.top = "20%";
+picture.style.backgroundSize = "100% 100%";
+picture.style.backgroundRepeat = "no-repeat"; 
+
+funct.style.left = "8%";
+funct.style.top = "35%";
+
+struc.style.left = "45%";
+
+effects.style.top = "72%";
+
+polymer.style.top = "87%";
+polymer.style.left = "46%";
+
+mono.style.top = "73%";
+
+strucpara.style.visibility = "hidden";
+monopara.style.visibility = "hidden";
+functpara.style.visibility = "hidden";
+polypara.style.visibility = "hidden";
+effectspara.style.visibility = "hidden";
+
+switch(x){
+case 1: strucpara.style.visibility = "visible";
+break;
+
+case 2: monopara.style.visibility = "visible";
+break;
+
+case 3: polypara.style.visibility = "visible";
+break;
+
+
+case 4: functpara.style.visibility = "visible";
+break;
+
+case 5: effectspara.style.visibility = "visible";
+break;
+}
+
+}
+
+
+
+</script>
+
+
+</body>
+</html>
+
+
+
+
+
